@@ -40,7 +40,7 @@ glucose = st.slider('Enter the Level of Glucose of Patient', min_value = dataset
 
 kcm = st.number_input("Enter Patient's Korotkoff's Cuff Measurement (KCM)" , min_value=dataset['kcm'].min() , max_value= dataset['kcm'].max() , step = 20.0 ) 
 
-troponin = st.number_input('Enter Patient's troponin Level' ,min_value=0.0001,  max_value=2.000, value=0.0001, format="%f", )
+troponin = st.number_input("Enter Patient's troponin Level" ,min_value=0.0001,  max_value=2.000, value=0.0001, format="%f", )
 
 input = np.array([age, gender , impluse , pressurehight , pressurelow , glucose , kcm , troponin ]) 
 input = input.reshape(1,-1)
